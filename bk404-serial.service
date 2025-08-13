@@ -1,0 +1,11 @@
+[Unit]
+Description=Orei BK-404 Serial Web Server
+After=network.target
+
+[Service]
+ExecStart=/home/jedimaster/BK404Web/venv/bin/flask --app app run --host 0.0.0.0
+WorkingDirectory=/home/jedimaster/BK404Web/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
