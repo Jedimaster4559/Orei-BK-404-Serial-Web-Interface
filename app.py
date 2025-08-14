@@ -23,6 +23,5 @@ def run_command(command_str):
     return render_template('command.html', command=full_command.decode(), data=text_array)
 
 if __name__ == "__main__":
-    #run_command("status")
-    app.run(debug=True)
+    app.run(debug=False)
 
